@@ -15,6 +15,8 @@ fetch('https://breakingbadapi.com/api/characters')
     })
     //INFO QUE DEVUELVE LA API
     .then(function(data) { 
+        //LIMPIAR EL CONTENIDO (MENSAJE 'CARGANDO...')
+        charactersHtml.innerHTML = '';
         //GUARDA RESPUESTA DE API EN NUESTRO ARRAY (LISTA DE PERSONAJES)
         characterList = data;
         console.log(characterList);
