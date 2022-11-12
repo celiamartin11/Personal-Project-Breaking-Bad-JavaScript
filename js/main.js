@@ -24,7 +24,7 @@ fetch('https://breakingbadapi.com/api/characters')
             //CREAR TARJETA CON NOMBRE, IMAGEN Y VIVO/MUERTO
             charactersHtml.innerHTML += 
             `<li class="card">
-                <img class="card-image" src="${character.img}">
+                <img class="card-image" src="${character.img}" alt="${character.name}">
                 <h2 class="card-name">${character.name}</h2>
                 <h2 class="card-life">${character.status}</h2>
             </li>`;

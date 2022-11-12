@@ -3,19 +3,26 @@
     height: 30vh;
 }
 
-.image{
-    
+.image{  
+    width: 100vw; 
+    height: 30vh;
+    object-fit: cover; 
 }
 
 .div{
-    background-color: white;
-    height: 20vh;
-}
-
-.form{
+    border: 2px solid orange;
+    background-color: orange;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+
+
+
+.form{
+    
 }
 
 .input{
@@ -31,4 +38,28 @@
     border: none;
     padding: 8px 15px 8px 15px;
     font-size: 18px;
+}
+
+.card{
+    border: 2px solid orange;
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image{
+    width: 12vw;
+    height: 24vh;
+    object-fit: cover;
+}
+
+.card-name{
+
+}
+
+.card-life{
+
 }
