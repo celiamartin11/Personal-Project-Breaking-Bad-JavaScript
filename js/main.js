@@ -72,8 +72,11 @@ function clickCharacterEvent(event) {
     for(const character of characterList) {
         //SI EL ID DEL PERSONAJE QUE ESTOY RECORRIENDO (character.char_id) ES IGUAL AL ID DEL PERSONAJE QUE HE SELECCIONADO (event.currentTarget.id)
         if(character.char_id == event.currentTarget.id) {
-            //SE GUARDA EL SELECCIONADO EN LA VARIABLE characterFavSelected
-            characterFavList.push(character);
+            //SI EL PERSONAJE QUE ESTAMOS SELECIONANDO (character) NO ESTÁ YA INCLUIDO EN LA LISTA DE FAVORITOS (characterFavList)
+            if(!characterFavList.includes(character)) {
+                //SE GUARDA EL SELECCIONADO EN LA VARIABLE characterFavSelected
+                characterFavList.push(character);
+            }
         }
     }
 
