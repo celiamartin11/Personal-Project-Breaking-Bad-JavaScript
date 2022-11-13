@@ -41,6 +41,18 @@
 
 /*  CARDS  */
 
+.main-container{
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+}
+
+.favourites-characters{
+    background-color: rgb(255, 233, 192);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 21px;
+}
+
 .main-content {
     display: flex;
     justify-content: center;
@@ -95,3 +107,4 @@
     font-size: 16px;
     padding-top: 10px;
 }
+
