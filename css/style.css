@@ -72,7 +72,8 @@
     grid-template-columns: 50% 50%;
     margin-left: 21px;
     margin-top: 21px;
-    height: 42.5vh;
+    margin-bottom: 80px;
+    padding-bottom: 15px;
 }
 
 .main-content {

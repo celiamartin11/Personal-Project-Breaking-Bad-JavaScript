@@ -94,7 +94,9 @@ function clickCharacterEvent(event) {
     }
 }
 
+/*
 //EVENTO BUTTON RESET
 buttonResetHtml.addEventListener("click", (event) => {
     event.preventDefault();
 });
+*/
