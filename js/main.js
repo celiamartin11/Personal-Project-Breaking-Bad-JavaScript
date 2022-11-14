@@ -5,6 +5,7 @@ const inputSearchHtml = document.querySelector('.js-input');
 const buttonSearchHtml = document.querySelector('.js-button-search');
 const charactersHtml = document.querySelector('.js-character-list');
 const charactersFavHtml = document.querySelector('.js-character-favourites-list');
+const buttonResetHtml = document.querySelector('.js-button-reset');
 let cardHtml;
 
 //ARRAY
@@ -24,7 +25,7 @@ fetch('https://breakingbadapi.com/api/characters')
 
 
 
-//EVENTO
+//EVENTO BUTTON SEEARCH
 buttonSearchHtml.addEventListener("click", (event) => {
     event.preventDefault();
     //LLAMAR A LA API
@@ -93,4 +94,7 @@ function clickCharacterEvent(event) {
     }
 }
 
-
+//EVENTO BUTTON RESET
+buttonResetHtml.addEventListener("click", (event) => {
+    event.preventDefault();
+});
