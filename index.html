@@ -6,31 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evaluación Final</title>
     <link rel= "stylesheet" href="./css/style.css">
+    <link rel= "stylesheet" href="./reset.css">
+    <link rel="icon" href="./images/face_black.png">
 </head>
 <body>
     <header class="header">
         <img class="image" src="./images/Breaking_bad.jpg" alt="Breaking Bad junto a los protagonistas">
     </header>
     <main>
-        <div class="div">
+        <div class="search-container">
             <form class="form js-form">
                 <input class="input js-input" type="text" name="character" placeholder="Introduce el nombre de un personaje">
+                <button class="button js-button-search">Buscar</button>
             </form>
-            <button class="button js-button-search">Buscar</button>
         </div>
-        <div>
-            <h1>Personajes</h1>
-            <ul class="js-character-list">
-                <li>
-                    Cargando...
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2 class="js-character-favourites-list">Favoritos</h2>
-            <ul>
-            </ul>
-        </div>
+        <div class="main-container">
+            <div>
+                <h2 class="main-content-title">Favoritos</h2>
+                <ul class="favourites-characters js-character-favourites-list">
+                </ul>
+            </div>
+            <div class="main-content">
+                <h1 class="main-content-title">Personajes</h1>
+                <ul class="character-container js-character-list">
+                    <li>
+                        Cargando...
+                    </li>
+                </ul>
+            </div>
+        </div>  
     </main>
     <script src="./js/main.js"></script>
 </body>
