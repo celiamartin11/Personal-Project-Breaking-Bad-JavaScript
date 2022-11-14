@@ -8,9 +8,17 @@ const charactersFavHtml = document.querySelector('.js-character-favourites-list'
 const buttonResetHtml = document.querySelector('.js-button-reset');
 let cardHtml;
 
+
 //ARRAY
 let characterList = [];
 let characterFavList = [];
+
+//LOCAL STORAGE
+//AL CARGAR LA PAGINA, SI EXISTE EL VALOR 'favCharactersList' EN LOCALSTORAGE, MUESTRO LA LISTA DE PERSONAJES FAVORITOS
+const localStorageFavList = localStorage.getItem('favCharactersList');
+if (localStorageFavList !== null) {
+    keepCharacterFav(JSON.parse(localStorageFavList));   
+}
 
 //LLAMAR API. 
 fetch('https://breakingbadapi.com/api/characters')
@@ -24,7 +32,6 @@ fetch('https://breakingbadapi.com/api/characters')
     });
 
 
-
 //EVENTO BUTTON SEEARCH
 buttonSearchHtml.addEventListener("click", (event) => {
     event.preventDefault();
@@ -35,7 +42,7 @@ buttonSearchHtml.addEventListener("click", (event) => {
     })
     //INFO QUE DEVUELVE LA API
     .then(function(data) { 
-        //LLAMA A LA FUNCIÓN showCaracterCards PASANDO EL data QUE RECIBO DEL API (LINE41)
+        //LLAMA A LA FUNCIÓN showCaracterCards PASANDO EL data QUE RECIBO DEL API (LINE45)
         showCharacterCards(data);
     });
 });
@@ -92,11 +99,20 @@ function clickCharacterEvent(event) {
             <h2 class="card-life">${characterFav.status}</h2>
         </li>`;
     }
-}
+    //GUARDAR LA LISTA DE FAVORITOS EN EL LOCAL STORAGE
+    //localStorage.setItem('nombre de la variable', 'valor que quiero guardar')
+    localStorage.setItem('favCharactersList', JSON.stringify(characterFavList));
+};
 
-/*
-//EVENTO BUTTON RESET
-buttonResetHtml.addEventListener("click", (event) => {
-    event.preventDefault();
-});
-*/
+function keepCharacterFav(listOfFavCharacters) {
+    //UNA VEZ AGREGADO EL PERSONAJE A LA LISTA DE FAVORITOS, MOSTRAMOS LA LISTA POR PANTALLA
+    for (const characterFav of listOfFavCharacters) {
+        //CREA Y MUESTRA TARJETA CON NOMBRE, IMAGEN Y VIVO/MUERTO
+        charactersFavHtml.innerHTML += 
+        `<li class="card js-card" id="${characterFav.char_id}">
+            <img class="card-image" src="${characterFav.img}" alt="${characterFav.name}">
+            <h2 class="card-name">${characterFav.name}</h2>
+            <h2 class="card-life">${characterFav.status}</h2>
+        </li>`;
+    }
+};
