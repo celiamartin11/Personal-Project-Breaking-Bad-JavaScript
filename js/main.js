@@ -116,3 +116,10 @@ function keepCharacterFav(listOfFavCharacters) {
         </li>`;
     }
 };
+
+buttonResetHtml.addEventListener("click", (event) => {
+    event.preventDefault();
+    characterFavList = [];
+    localStorage.removeItem('favCharactersList');
+    charactersFavHtml.innerHTML = '';
+});
