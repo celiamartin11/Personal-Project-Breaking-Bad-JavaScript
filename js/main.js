@@ -7,6 +7,8 @@ const charactersHtml = document.querySelector('.js-character-list');
 const charactersFavHtml = document.querySelector('.js-character-favourites-list');
 const buttonResetHtml = document.querySelector('.js-button-reset');
 let cardHtml;
+const buttonLogHtml = document.querySelector('.js-button-log');
+
 
 
 //ARRAY
@@ -62,6 +64,7 @@ function showCharacterCards(data) {
             <img class="card-image" src="${character.img}" alt="${character.name}">
             <h2 class="card-name">${character.name}</h2>
             <h2 class="card-life">${character.status}</h2>
+            <h2 class="card-life">${character.nickname}</h2>
         </li>`;
     }
 
@@ -122,4 +125,11 @@ buttonResetHtml.addEventListener("click", (event) => {
     characterFavList = [];
     localStorage.removeItem('favCharactersList');
     charactersFavHtml.innerHTML = '';
+});
+
+buttonLogHtml.addEventListener("click", (event) => {
+    event.preventDefault();
+    for(const character of characterFavList){
+        console.log(character.name);
+    } 
 });
