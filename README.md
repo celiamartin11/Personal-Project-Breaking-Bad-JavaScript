@@ -12,12 +12,13 @@ Además de encontrar HTML5, CSS3 y JavaScript también encontrarás unos pequeñ
 
 Para comenzar encontrarás un "input" el cual te indica que debes introducir el nombre de un personaje de la serie. Este va acompañado de un botón de búsqueda, el cual tendrás que clickar para encontrar el personaje escrito.
 
-https://user-images.githubusercontent.com/113979188/217518833-c2354409-8057-4edb-a95d-1eda4e704a11.mp4
+![Video CV](https://user-images.githubusercontent.com/113979188/217520789-6b05a1ce-63f1-4a60-86a4-5fe3706b0896.gif)
 
 A continuación encontrarás dos apartados: 
 - *Favoritos* → Donde aparecerán los personajes que tú desees añadir como favoritos clickando sobre estos. En el caso de querer eliminarlos de este apartado, solo deberás clickar en el botón de "Borrar favoritos". 
 - *Personajes* → Donde aparecerá una larga lista de personajes que aparecen a lo largo de la serie de "Breaking Bad". Estos irán acompañados del nombre del personaje, si está vivo o muerto y su apodo. 
 
-https://user-images.githubusercontent.com/113979188/217518889-29ce6ef2-ab21-4bdd-b370-54b6e5f1bcb5.mp4
+![Video CV (1)](https://user-images.githubusercontent.com/113979188/217520973-385fd718-e521-4e6c-a929-274961e4d9de.gif)
+
 
 
