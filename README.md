@@ -16,7 +16,7 @@ Para comenzar encontrarás un "input" el cual te indica que debes introducir el 
 
 A continuación encontrarás dos apartados: 
 - *Favoritos* → Donde aparecerán los personajes que tú desees añadir como favoritos clickando sobre estos. En el caso de querer eliminarlos de este apartado, solo deberás clickar en el botón de "Borrar favoritos". 
-- *Personajes* → Donde aparecerá una larga lista de personajes que aparecen a lo largo de la serie de "Breaking Bad". Estos irán acompañados del nombre del personaje, si está vivo o muerto y su apodo. ..
+- *Personajes* → Donde aparecerá una larga lista de personajes que aparecen a lo largo de la serie de "Breaking Bad". Estos irán acompañados del nombre del personaje, si está vivo o muerto y su apodo. 
 
 ![Video CV (1)](https://user-images.githubusercontent.com/113979188/217520973-385fd718-e521-4e6c-a929-274961e4d9de.gif)
 
