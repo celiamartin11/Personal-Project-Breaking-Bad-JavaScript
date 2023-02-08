@@ -4,7 +4,7 @@ En este proyecto a parte de encontrar JavaScript, también podemos encontrar un 
 
 ## Alerta: Spoiler 🚨
 
-Además de encontrar HTML5, CSS3 y JavaScript también encontrarás unos pequeños pero intensos spoilers acerca de si los personajes que aparecen en la serie están **vivos o muertos.** *(Dejo constancia de este dato por si alguno me odia directamente sin conocerme)* 🤪
+Además de encontrar HTML5, CSS3 y JavaScript también encontrarás unos pequeños pero intensos spoilers acerca de si los personajes que aparecen en la serie están **vivos o muertos.** *(Dejo constancia de este dato por si alguien me odia directamente sin conocerme)* 🤪
 
 ![Captura de pantalla 2023-02-08 123321](https://user-images.githubusercontent.com/113979188/217518749-9cd7739b-cf55-4a92-95f2-6dd593fe2ca2.png)
 
